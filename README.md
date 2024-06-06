@@ -20,7 +20,8 @@ This is a book store website built using Java Spring Boot, HTML, CSS, and MySQL.
 ## Installation
 To run this project locally, follow these steps:
 
-1. Clone this repository: **git clone https://github.com/ghstkillrD/book-store.git**
+1. Clone this repository: **git clone https://github.com/kawishkaBW/Book_Store.git
+**
 2. Navigate to the project directory: **cd book-store**
 3. Install dependencies: **mvn install**
 4. Set up MySQL database:
