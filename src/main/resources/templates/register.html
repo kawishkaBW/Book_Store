@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org" lang="en" dir="ltr">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register</title>
+</head>
+<body>
+
+<div class="container">
+    <input type="checkbox" id="flip">
+    <div class="cover">
+        <div class="front">
+            <img src="images/frontImg.jpg" alt="">
+            <div class="text">
+                <span class="text-1">Complete miles of journey <br> with a book</span>
+                <span class="text-2">Let's get started</span>
+            </div>
+        </div>
+    </div>
+
+    <div class="forms">
+        <div class="form-content">
+            <div class="login-form">
+                <div class="title">Signup</div>
+                <form th:action="@{/registerUserAccount}" method="post">
+                    <div class="input-boxes">
+                        <div class="input-box">
+                            <i class="fas fa-user"></i>
+                            <input type="text" th:id="name" th:name="name" placeholder="Enter Name" required>
+                        </div>
+                        <div class="input-box">
+                            <i class="fas fa-address-card"></i>
+                            <input type="text" th:id="username" th:name="username" placeholder="Enter Username" required>
+                        </div>
+                        <div class="input-box">
+                            <i class="fas fa-envelope"></i>
+                            <input type="text" th:id="email" th:name="email" placeholder="Enter Email" required>
+                        </div>
+                        <div class="input-box">
+                            <i class="fas fa-phone"></i>
+                            <input type="text" th:id="phone" th:name="phone" placeholder="Enter Phone Number" required>
+                        </div>
+                        <div class="input-box">
+                            <i class="fas fa-home"></i>
+                            <input type="text" th:id="address" th:name="address" placeholder="Enter Address" required>
+                        </div>
+                        <div class="input-box">
+                            <i class="fas fa-lock"></i>
+                            <input type="password" th:id="password" th:name="password" placeholder="Enter Password" required>
+                        </div>
+
+                        <div class="button input-box">
+                            <button type="submit">Register</button>
+                        </div>
+                        <div class="text sign-up-text">
+                            Already have an account? <a href="login.html"><label>Login now</label></a>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
